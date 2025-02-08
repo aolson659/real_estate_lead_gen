@@ -24,17 +24,17 @@ def find_next_empty_row(sheet):
     
 
 
-def get_url(year, sheet_id, sheet_name):
+def get_url(year, sheet_id, park_list, sheet_name):
 
     # Configuration file for google cloud api is required for this script to work
     cred_file = "your_google_cloud_json_file"
     gc = gspread.service_account(cred_file)
 
     # Google file with park list data and sheets for data to be sent to
-    park_data = gc.open("EVICTION records - Chaparral A MHP")
+    park_data = gc.open(sheet_id)
 
     # List of mobile home parks
-    park_list_sheet = park_data.worksheet(sheet_id)
+    park_list_sheet = park_data.worksheet(park_list)
 
     column_1_values = park_list_sheet.col_values(1)[1:]
 
@@ -121,7 +121,6 @@ def get_url(year, sheet_id, sheet_name):
                                             pass
                                         else:
                                             defendants = [defendants]
-                                        data_to_send = [plaintiff, hyperlink_formula, defendants, judgments, judgment_date, total_amount, rent, attorney_fees, tax, utilities, late_charge, notice_fees, costs, undesignated]
                                         # Generate datafram with data to be sent to google sheet
                                         new_data = pd.DataFrame({
                                             'plaintiff': [plaintiff],
@@ -184,5 +183,6 @@ def get_url(year, sheet_id, sheet_name):
 
 if __name__ == '__main__':
     sheet_id = 'EVICTION records - Chaparral A MHP'
-    sheet_name = 'test_sheet'
-    get_url(2025, sheet_id, sheet_name)
+    park_list = 'Park List'
+    sheet_name = 'Data 1/28'
+    get_url(2025, sheet_id, park_list, sheet_name)
