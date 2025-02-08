@@ -26,9 +26,8 @@ def find_next_empty_row(sheet):
 
 def get_url(year, sheet_id, sheet_name):
 
-
-    cred_file = "sheet-access4-782ff8a84ae3.json"
-  #  cred_file = "your_google_cloud_json_file"
+    # Configuration file for google cloud api is required for this script to work
+    cred_file = "your_google_cloud_json_file"
     gc = gspread.service_account(cred_file)
 
     # Google file with park list data and sheets for data to be sent to
