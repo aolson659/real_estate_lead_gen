@@ -1,5 +1,5 @@
 """The functions in this script are used to convert web pages to text files. Within these files exist case numbers, which
-are used to generate additional URLs to the webpage for specific a specific case. The rest of the functions are used to
+are used to generate additional URLs to the webpage for a specific court case. The rest of the functions are used to
 pull certain data from those webpages. Each of these webpages are structured the same way, allowing this data to be pulled
 in a uniform manner. The method for this is a keyword search and additional parsing to filter out excpetions and deliver
 clean data to the google sheet."""
