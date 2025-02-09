@@ -23,12 +23,15 @@ Install all dependencies:
 
 pip install -r requirements.txt
 
-## Clone the Repository
-First, clone the repository to your local machine using the following command:
-```bash```
-git clone https://github.com/aolson659/real_estate_lead_gen.git
-cd real_estate_lead_gen
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/aolson659/real_estate_lead_gen.git
 
+2. **Navigate to project directory**:
+    cd real_estate_lead_gen
+
+3. **Install required python libraries**:
+    pip install -r requirements.txt
 
 The program does require google cloud API setup, you will need a json configuration file for it to run. However if you want to test out the data parsing, there is a URL present in parse_data that will provide an example of how the functions work.
 
