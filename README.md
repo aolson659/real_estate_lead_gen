@@ -19,9 +19,6 @@ The program searches county court cases, generating URLs based on a list of mobi
 
 ## Setup and Installation
 Ensure you have Python 3.8+ installed.
-Install all dependencies:
-
-pip install -r requirements.txt
 
 1. **Clone the Repository**:
     ```bash
