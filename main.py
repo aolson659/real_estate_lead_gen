@@ -2,7 +2,6 @@
 are generated and verification is done to determine if desirable data is present within the web page. It then calls the
 functions in parse_data to pull the data, compile them into a dataframe, and send them to a google sheet for the client.'''
 
-from bs4 import BeautifulSoup
 import gspread
 from gspread_dataframe import set_with_dataframe
 import time
