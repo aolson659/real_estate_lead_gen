@@ -33,7 +33,7 @@ Ensure you have Python 3.8+ installed.
 The program does require google cloud API setup, you will need a json configuration file for it to run. However if you want to test out the data parsing, there is a URL present in parse_data that will provide an example of how the functions work.
 
 ### Features
-The purpose of this project was to provide an easy way for a local business to generate new leads. It finds ideal customers for the business and provides all the data necessary for the business to make an offer. It has proven to be hugely beneficial ot the business, saving them time and allowing for them to increase their revenue. Since having access to the program, they have reported more than a XXX% increase in their revenue stream. The program was integrated onto their XXX server and can be easily run, providing new leads whenever they need them.
+The purpose of this project was to provide an easy way for a local business to generate new leads. It finds ideal customers for the business and provides all the data necessary for the business to make an offer. It has proven to be hugely beneficial ot the business, saving them time and allowing for them to increase their revenue. Since having access to the program, they have reported an increase of $224,000 to their revenue stream, more than doubling what they brought in from the previous year. The program was integrated onto their XXX server and can be easily run, providing new leads whenever they need them.
 
 
 ### Contact
